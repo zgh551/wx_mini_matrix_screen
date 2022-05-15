@@ -1,0 +1,15 @@
+<!--pages/wifi/wifi.wxml-->
+<view>
+    <text>WIFI:</text>
+    <input type="text" placeholder="wifi ssid" value="{{ssid}}"/>
+</view>
+<view>
+    <text>密码：</text>
+    <input type="text" placeholder="wifi password" bindinput="passwordFinish" value="{{password}}"/>
+</view>
+<view>
+    <text>{{network_type}}</text>
+</view>
+<view>
+    <button type="primary" bindtap="wifi_smartconfig">配网</button>
+</view>
